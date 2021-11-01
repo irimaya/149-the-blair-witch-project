@@ -1,0 +1,18 @@
+/* Mainheader */
+#mainheader {
+  height: 100%;
+}
+
+/* Navbar */
+#navbar {
+  padding-left: 15px;
+}
+
+#navbar ul {
+  float: none;
+}
+
+/* Cast */
+.cast-row {
+  flex-wrap: wrap;
+}

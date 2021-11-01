@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #000;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.7em;
+}
+
+a { text-decoration: none; }
+
+/* Utility Classes */
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.small { font-size: 0.8rem; }
+
+.txt-gray {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  padding: 12px 23px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+.btn-dark {
+  background: rgba(025, 025, 025, 0);
+  color: rgba(255, 255, 255, 0);
+}
+
+.btn-dark:hover {
+  background:rgba(255, 255, 255, 0);
+  border: solid rgba(255, 255, 255, 0.5) 1px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Mainheader */
+#mainheader {
+  background: url('../img/background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Navbar */
+#navbar {
+  /* background: #000; */
+  color: #fff;
+  overflow: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#navbar a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a.current {
+  text-decoration: underline;
+}
+
+#navbar ul li a:hover {
+  color: #fff;
+}
+
+/* Showcase */
+#showcase {
+  padding: 70px;
+  height: 75vh;
+}
+
+/* .showcase-display {
+  background: url('../img/background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  text-align: center;
+  padding-top: 250px;
+} */
+
+/* Trailer */
+#trailer {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.trailer-row {
+  display: flex;
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.trailer-description {
+  flex: 4;
+  text-align: left;
+}
+
+.trailer-details {
+  flex: 2;
+  text-align: left;
+  padding-left: 30px;
+}
+
+/* Cast */
+#cast {
+  padding: 40px 0 50px 0;
+}
+
+#cast h1 {
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 40px;
+}
+
+.cast-row {
+  display: flex;
+}
+
+.cast-box {
+  margin: 10px;
+}
+
+.cast-box hr {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  height: 3px;
+}
+
+.cast-row img {
+  width: 100%;
+  margin-bottom: -3px;
+}
+
+.cast-box-text {
+  color: #fff;
+  background: #151719;
+  padding: 20px;
+  /* margin-top: -5px; */
+}
+
+.cast-box-text h3 {
+  font-weight: 300;
+}
+
+.cast-box-text p {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+}
+
+/* Review */
+#review {
+  color: #fff;
+  padding: 40px 0 50px 0;
+}
+
+#review h1 {
+  padding-bottom: 40px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.review-row {
+  display: flex;
+}
+
+.review-box {
+  padding: 20px;
+  flex: 1;
+}
+
+.review-box h5 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.review-box p {
+  font-style: italic;
+}
+
+/* Footer */
+#mainfooter {
+  /* background: #000;   */
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  padding: 40px 0;
+}
+
+#mainfooter h6 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#mainfooter p,
+#mainfooter h6 {
+  text-align: left;
+}
+
+.mainfooter-row {
+  display: flex;
+}
+
+.mainfooter-box-1,
+.mainfooter-box-2,
+.mainfooter-box-3,
+.mainfooter-box-4 {
+  flex: 1;
+}
+
+.mainfooter-twitter   {
+  flex: 2;
+  text-align: right;
+  padding-top: 13px;
+}
+
+/* Secondary Footer */
+#secondaryfooter {
+  text-align: center;
+  padding: 30px;
+}
